@@ -29,7 +29,10 @@ function generateMarkdown(data) {
           *[Contributors](#contributors)
           *[Tests](#tests)
           *[Questions](#questions)
-
+          
+          ###License
+          ${response.license}
+          
           ### Description
           ${response.description}
 
@@ -39,8 +42,6 @@ function generateMarkdown(data) {
           ### Usage
           ${response.usage}
 
-          ###License
-          ${response.license}
 
           ###Contributors
           ${response.contributors}
