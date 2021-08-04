@@ -54,7 +54,7 @@ const questions = [
 function writeToFile(fileName, data) {
 
     fs.writeToFile(fileName, data), (err) => 
-        err ? console.log(err) : console.log('Success!')
+        err ? console.log(err) : console.log("Success!")
 };
 
 // TODO: Create a function to initialize app
