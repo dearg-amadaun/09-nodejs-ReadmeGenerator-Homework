@@ -2,7 +2,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const generateMarkdown = require("./util/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -27,8 +27,8 @@ const questions = [
     message: "Please choose your license.",
     choices: [
         "MIT",
-        "GNU GPLv3",
-        "Apache License 2.0"
+        "GPL-3.0-or-later",
+        "Apache-2.0"
     ],
     name: "license"
 }, {
@@ -53,13 +53,8 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeToFile(fileName, data, function(err) {
-        if (err) { return console.log(err) 
-         } else { 
-        console.log("success")}
-        
-        console.log(fileName);
-    })
+    fs.writeToFile(fileName, data), (err) => 
+        err ? console.log(err) : console.log('Success!')
 };
 
 // TODO: Create a function to initialize app
