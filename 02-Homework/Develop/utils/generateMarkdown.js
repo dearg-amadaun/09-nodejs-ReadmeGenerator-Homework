@@ -14,19 +14,18 @@ function renderLicenseBadge(license) {
   return badge.join();
 };
 
-//Already handled by above
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   var licenseLink= []
   if (license.includes ("MIT")) {
-    licenseLink.push `("https://opensource.org/licenses/MIT")`
+    licenseLink.push ( "https://opensource.org/licenses/MIT" )
   }
   if (license.includes ("GPL-3.0-or-later")) {
-    licenseLink.push `("https://www.gnu.org/licenses/lgpl-3.0")`
+    licenseLink.push ( "https://www.gnu.org/licenses/lgpl-3.0" )
   }
   if (license.includes ("Apache-2.0")) {
-    licenseLink.push `("https://www.gnu.org/licenses/lgpl-3.0")`
+    licenseLink.push ( "https://www.gnu.org/licenses/lgpl-3.0" )
   } 
   return licenseLink.join();
 };
