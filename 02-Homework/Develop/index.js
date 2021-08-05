@@ -46,16 +46,16 @@ const questions = [
 }, {
     type: "input",
     message: "Please enter your e-mail address",
-    name: "e-mail" //place under questions heading
+    name: "mail" //place under questions heading
 },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeToFile(fileName, data), (err) => 
+    fs.writeToFile(fileName, data, (err) => 
         err ? console.log(err) : console.log("Success!")
-};
+    )};
 
 // TODO: Create a function to initialize app
 function init() {

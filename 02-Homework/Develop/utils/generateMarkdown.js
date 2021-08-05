@@ -31,28 +31,28 @@ function generateMarkdown(data) {
           *[Questions](#questions)
           
           ###License
-          ${response.license}
+          ${data.license}
           
           ### Description
-          ${response.description}
+          ${data.description}
 
           ### Installation
-          ${response.installation}
+          ${data.installation}
 
           ### Usage
-          ${response.usage}
+          ${data.usage}
 
 
           ###Contributors
-          ${response.contributors}
+          ${data.contributors}
 
           ###Tests
-          ${response.tests}
+          ${data.tests}
 
           ###Questions
           Please direct any questions or comments to:
-          ${response.username}
-          ${response.e-mail}
+          ${data.username}
+          ${data.mail}
 
 `;
 }
