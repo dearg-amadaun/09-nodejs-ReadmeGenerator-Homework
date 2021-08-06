@@ -27,7 +27,7 @@ function renderLicenseLink(license) {
   if (license.includes ("Apache-2.0")) {
     licenseLink.push ( "https://www.gnu.org/licenses/lgpl-3.0" )
   } 
-  return licenseLink.join();
+  return licenseLink.join("\n");
 };
 
 // TODO: Create a function that returns the license section of README
