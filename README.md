@@ -1,5 +1,4 @@
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   # README Generator.
   ![redmegenerator](https://user-images.githubusercontent.com/83721789/134789416-99ddead7-66f2-43d8-8b77-443021d355e7.jpg)
